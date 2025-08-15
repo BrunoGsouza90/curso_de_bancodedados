@@ -1,1 +1,1 @@
-{"version":3,"file":"dbconnection.d.ts","sourceRoot":"","sources":["../../src/settings/dbconnection.ts"],"names":[],"mappings":"AAOA,iBAAe,GAAG,kBAajB;AAoBD,eAAe,GAAG,CAAA"}
+{"version":3,"file":"dbconnection.d.ts","sourceRoot":"","sources":["../../src/settings/dbconnection.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,WAAW,EAAE,EAAE,EAAE,MAAM,SAAS,CAAA;AAIzC,MAAM,CAAC,OAAO,OAAO,YAAY;IAE7B,SAAS,CAAC,OAAO,EAAE,WAAW,CAAA;IAC9B,SAAS,CAAC,QAAQ,EAAE,EAAE,CAAA;;IAoBhB,GAAG;IAgBH,IAAI;CAgBb"}

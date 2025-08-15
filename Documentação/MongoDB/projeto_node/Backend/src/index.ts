@@ -2,8 +2,17 @@ import express from "express"
 import run from "./settings/dbconnection"
 import Routes from "./routes/Routes"
 import dotenv from "dotenv"
+import path from "path"
 
-dotenv.config()
+dotenv.config (
+
+    {
+
+        path: path.resolve(__dirname, "../../.env")
+
+    }
+
+)
 
 const app = express()
 
