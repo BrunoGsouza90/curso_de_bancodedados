@@ -42,11 +42,27 @@ class Clientes extends dbconnection_1.default {
         this.idade = idade;
     }
     // ============================================================
+    visualizarClientes() {
+        return __awaiter(this, void 0, void 0, function* () {
+            try {
+                this.run;
+                return yield this.collection.find().toArray();
+            }
+            catch (error) {
+                console.log(`Erro ao visualizar os clientes no Banco de Dados!\n\nErro:\n\n\${error}`);
+            }
+            finally {
+                this.stop();
+            }
+        });
+    }
+    // ============================================================
     inserirCliente(cliente) {
         return __awaiter(this, void 0, void 0, function* () {
             try {
                 this.run();
                 yield this.collection.insertOne(cliente);
+                console.log("Cliente inserido com sucesso!");
             }
             catch (error) {
                 console.log(`Erro ao inserir clientes no Banco de Dados!\n\nErro:\n\n\${error}`);

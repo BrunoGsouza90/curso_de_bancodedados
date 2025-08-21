@@ -1,5 +1,4 @@
 import express from "express"
-import run from "./settings/dbconnection"
 import Routes from "./routes/Routes"
 import dotenv from "dotenv"
 import path from "path"
@@ -8,7 +7,7 @@ dotenv.config (
 
     {
 
-        path: path.resolve(__dirname, "../../.env")
+        path: path.resolve(__dirname, "../.env")
 
     }
 
@@ -23,8 +22,6 @@ app.use("/", Routes)
 async function serverRun() {
 
     try {
-
-        run()
 
         app.listen(Number(process.env.PORT) as number, process.env.URL as string, () => {
 

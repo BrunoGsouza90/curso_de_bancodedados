@@ -12,6 +12,7 @@ export default class Clientes extends dbConnection {
     set setSobrenome(sobrenome: string);
     get getIdade(): number;
     set setIdade(idade: number);
+    visualizarClientes(): Promise<import("mongodb").WithId<import("bson").Document>[] | undefined>;
     inserirCliente(cliente: interfaceClientes): Promise<void>;
 }
 //# sourceMappingURL=User.d.ts.map
